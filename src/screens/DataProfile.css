@@ -1,3 +1,10 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+
 .App-logo {
     height: 150px;
     pointer-events: none;
