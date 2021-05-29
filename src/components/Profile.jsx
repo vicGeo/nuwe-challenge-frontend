@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-export default function Profile() {
+const Profile = () => {
+    
+    const [data, setData] = useState({});
+    const [username, setUsername] = useState("");
+    
+    const onChangeHandler = (e) => {
+        setUsername(e.target.value)
+    }
+    
+    
+    
+    
     return (
         <div>
-            
+            <input type='text' value={username} onChange={onChangeHandler} />
         </div>
     )
 }
+
+
+export default Profile;
